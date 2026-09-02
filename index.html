@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Enquête TFS-4 — Corpus anonymisés</title>
+<style>
+:root{
+  --bg:#f6f4ef;
+  --paper:#ffffff;
+  --ink:#232323;
+  --muted:#666;
+  --line:#d8d5ce;
+  --accent:#253a52;
+  --accent2:#e9eef4;
+  --soft:#f1f0ec;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+  line-height:1.65;
+}
+header.hero{
+  background:var(--accent);
+  color:#fff;
+  padding:40px 24px 30px;
+}
+.hero-inner{max-width:1120px;margin:0 auto}
+.eyebrow{
+  font-size:.78rem;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  opacity:.75;
+  margin-bottom:8px;
+}
+h1{
+  font-family:Georgia,"Times New Roman","Songti SC",serif;
+  font-size:clamp(2rem,4vw,3rem);
+  line-height:1.15;
+  margin:0 0 10px;
+  font-weight:650;
+}
+.subtitle{font-size:1rem;opacity:.88;margin:0}
+nav.main-nav{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:10;
+}
+.nav-inner{
+  max-width:1120px;
+  margin:0 auto;
+  padding:12px 20px;
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+.nav-link{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  text-decoration:none;
+  color:var(--accent);
+  border:1px solid #b9c4cf;
+  background:#fff;
+  border-radius:8px;
+  padding:9px 14px;
+  font-weight:650;
+  transition:.15s ease;
+}
+.nav-link:hover,.nav-link:focus{
+  background:var(--accent2);
+  border-color:#8799aa;
+  outline:none;
+}
+main{max-width:1120px;margin:0 auto;padding:32px 20px 72px}
+.intro{
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:24px 28px;
+  margin-bottom:22px;
+}
+.intro h2{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:1.28rem;
+  margin:0 0 8px;
+}
+.intro p{margin:.45em 0;color:#3c3c3c}
+.cards{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:16px;
+}
+.card{
+  display:block;
+  text-decoration:none;
+  color:inherit;
+  background:var(--paper);
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:22px;
+  transition:.16s ease;
+}
+.card:hover,.card:focus{
+  transform:translateY(-2px);
+  border-color:#aebac6;
+  box-shadow:0 7px 18px rgba(37,58,82,.08);
+  outline:none;
+}
+.card .label{
+  font-size:.76rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:7px;
+}
+.card h3{
+  font-family:Georgia,"Times New Roman",serif;
+  color:var(--accent);
+  margin:0 0 8px;
+  font-size:1.34rem;
+}
+.card p{margin:0;color:#555}
+.card .count{margin-top:12px;font-weight:650;color:var(--accent)}
+footer{
+  max-width:1120px;
+  margin:0 auto;
+  padding:0 20px 34px;
+  color:var(--muted);
+  font-size:.86rem;
+  text-align:center;
+}
+@media(max-width:820px){.cards{grid-template-columns:1fr}.nav-inner{flex-direction:column}.nav-link{width:100%}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="eyebrow">Annexes numériques</div>
+    <h1>Enquête TFS-4</h1>
+    <p class="subtitle">Corpus intégraux anonymisés des questionnaires</p>
+  </div>
+</header>
+
+<nav class="main-nav" aria-label="Navigation principale">
+  <div class="nav-inner">
+    <a class="nav-link" href="./etudiants/">Étudiants · n = 483</a>
+    <a class="nav-link" href="./enseignants/">Enseignants · n = 50</a>
+    <a class="nav-link" href="./evaluateurs/">Évaluateurs · n = 21</a>
+  </div>
+</nav>
+
+<main>
+  <section class="intro">
+    <h2>Accès aux corpus</h2>
+    <p>Cette page donne accès aux trois corpus électroniques anonymisés constitués dans le cadre de l’enquête sur le TFS-4.</p>
+  </section>
+
+  <section class="cards" aria-label="Corpus disponibles">
+    <a class="card" href="./etudiants/">
+      <div class="label">Annexe numérique A</div>
+      <h3>Étudiants</h3>
+      <p>Corpus intégral anonymisé des questionnaires individuels recueillis auprès des étudiants.</p>
+      <div class="count">483 questionnaires</div>
+    </a>
+
+    <a class="card" href="./enseignants/">
+      <div class="label">Annexe numérique B</div>
+      <h3>Enseignants</h3>
+      <p>Corpus intégral anonymisé des questionnaires individuels recueillis auprès des enseignants.</p>
+      <div class="count">50 questionnaires</div>
+    </a>
+
+    <a class="card" href="./evaluateurs/">
+      <div class="label">Annexe numérique C</div>
+      <h3>Évaluateurs</h3>
+      <p>Corpus intégral anonymisé des questionnaires individuels recueillis auprès des évaluateurs du TFS-4.</p>
+      <div class="count">21 questionnaires</div>
+    </a>
+  </section>
+</main>
+
+<footer>
+  Enquête TFS-4 · Corpus électroniques anonymisés
+</footer>
+</body>
+</html>
